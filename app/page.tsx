@@ -4,17 +4,15 @@ import Navbar from "@/components/Navbar";
 import NavigationBar from "@/components/SemiNavbar";
 import { useEffect, useState } from "react";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+import useWindowSize from "@rooks/use-window-size";
 
 export default function Home() {
+  const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
+
   const backgroundImageUrl =
     "https://www.lse.ac.uk/cpec/assets/images/747x420/mental-health-theme.jpg";
 
-  const scrollDown = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
+  const scrollDown = () => {};
   return (
     <>
       <div

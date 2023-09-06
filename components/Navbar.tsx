@@ -2,14 +2,17 @@ import { useState, useEffect } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import UpdatesPage from "./UpdatesPage";
 import MenuItems from "./Menu";
+import useWindowSize from "@rooks/use-window-size";
 
 interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = ({}) => {
+  const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isUpdatesOpen, setIsUpdatesOpen] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);
-  const [scrollheight, setScrollHeight] = useState(window.innerHeight);
+  const [scrollheight, setScrollHeight] = useState(innerHeight);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,13 +24,15 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
 
   const scrollreceived = () => {
     console.log(scrollheight);
-    setScrollHeight(window.innerHeight);
+    setScrollHeight(innerHeight);
   };
 
   useEffect(() => {
     const handleScroll = () => {
       scrollreceived();
-      setIsNavbarVisible(window.scrollY > scrollheight - 100);
+      if (scrollheight != null) {
+        setIsNavbarVisible(window.scrollY > scrollheight - 100);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
