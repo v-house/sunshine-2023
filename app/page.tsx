@@ -5,6 +5,7 @@ import NavigationBar from "@/components/SemiNavbar";
 import { useEffect, useState } from "react";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import useWindowSize from "@rooks/use-window-size";
+import TeamAd from "@/components/TeamAd";
 
 export default function Home() {
   const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
@@ -25,7 +26,6 @@ export default function Home() {
           overflow: "hidden",
         }}
       >
-        <Navbar />
         <ParallaxProvider>
           <Component />
         </ParallaxProvider>
@@ -55,11 +55,21 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-            voluptas similique error, ipsa fugit, ullam officiis pariatur
-            asperiores ducimus necessitatibus magnam natus obcaecati? Eveniet et
-            accusamus placeat nobis reprehenderit vel corporis totam sapiente
-            enim. Dicta molestias doloremque recusandae quis quam?
+            <div>
+              <TeamAd />
+            </div>
+            <div className="h-screen">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a
+              eius facilis perspiciatis, incidunt aliquam atque fugiat odio
+              cumque nam beatae commodi dolores sed quidem optio praesentium.
+              Voluptatum, ipsam possimus? Beatae, officiis? Asperiores in
+              dignissimos perferendis quo sapiente facere est, nostrum quisquam
+              corrupti debitis vel quia dolorum natus doloribus, minus atque.
+              Nisi, voluptatibus deleniti in eos quod aut est blanditiis
+              molestiae odit quo repudiandae esse eveniet cum amet doloremque
+              rerum.
+            </div>
+            <Navbar />
           </div>
         </div>
       </div>
