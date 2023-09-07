@@ -27,7 +27,7 @@ const Newsletter: React.FC = () => {
       email: "nancymomoland.com",
       phone: "00000000000",
       about:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem2 fdfklsdf dsfladjf sadf;jsladf sdfsjfldfsadk dsf dskfdsjfl ",
+        "When you add your text to QuillBots Word Counter, our powerful platform instantly performs the mundane counting tasks for you, so you can see right where your word and character limits are sitting for your project. So, if you don’t know what the rules are for what counts as a character or when compound words count as one or two words, save yourself the searching, and let QuillBot be the word and character calculator.When you add your text to QuillBots Word Counter, our powerful platform instantly performs the mundane counting tasks for you, so you can sdfsd sdfsa f sdfs",
     },
     {
       name: "Nancy Jewel Mcdonie",
@@ -36,7 +36,7 @@ const Newsletter: React.FC = () => {
       email: "nancymomoland.com",
       phone: "00000000000",
       about:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem2 fdfklsdf dsfladjf sadf;jsladf sdfsjfldfsadk dsf dskfdsjfl ",
+        "Lorem ipsum dolor sit amet, consectetur adipiipsum dolor sit amet, consectetur adipiipsum dolor sit amet, consectetur adipiipsum dolor sit amet, consectetur adipiscing elit. lorem2 fdfklsdf dsfladjf sadf;jsladf sdfsjfldfsadk dsf dskfdsjfl ",
     },
     {
       name: "Nancy Jewel Mcdonie",
@@ -53,13 +53,13 @@ const Newsletter: React.FC = () => {
       email: "nancymomoland.com",
       phone: "00000000000",
       about:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem2 fdfklsdf dsfladjf sadf;jsladf sdfsjfldfsadk dsf dskfdsjfl ",
+        "When you add your text to QuillBots Word Counter, our powerful platform instantly performs the mundane counting tasks for you, so you can see right where your word and character limits are sitting for your project.        So, if you don’t know what the rules are for what counts as a character or when compound words count as one or two words, save yourself the searching, and let QuillBot be the word and character calculator.",
     },
   ];
 
   return (
     <>
-      <section id="ContentTeam" className="py-8">
+      <section id="ContentTeam" className="pt-8">
         <div className="mb-8">
           <div className="mb-2 flex items-center">
             <hr className="border-t-2 border-white flex-grow" />
@@ -89,7 +89,7 @@ const Newsletter: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4">
+        <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 2xl:columns-5">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} {...member} />
           ))}

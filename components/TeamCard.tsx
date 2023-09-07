@@ -1,5 +1,5 @@
 import React from "react";
-import { FiPhoneCall, FiMail } from "react-icons/fi"; // Import icons from a suitable icon library
+import { FiPhoneCall, FiMail } from "react-icons/fi";
 
 interface TeamMemberProps {
   name: string;
@@ -30,17 +30,13 @@ const TeamMember: React.FC<TeamMemberProps> = ({
             <div className="flex space-x-2">
               <button
                 className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 focus:outline-none"
-                onClick={() => {
-                  // Handle call action
-                }}
+                onClick={() => {}}
               >
                 <FiPhoneCall />
               </button>
               <button
                 className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 focus:outline-none"
-                onClick={() => {
-                  // Handle email action
-                }}
+                onClick={() => {}}
               >
                 <FiMail />
               </button>
