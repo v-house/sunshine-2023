@@ -60,21 +60,34 @@ const Newsletter: React.FC = () => {
   return (
     <>
       <section id="ContentTeam" className="py-8">
-        <div className="mb-8 flex items-center">
-          <hr className="border-t-2 border-white flex-grow" />
-          <h2 className="text-3xl font-semibold text-blue-600 mx-4">
-            Content Team
-          </h2>
-          <hr className="border-t-2 border-white flex-grow" />
-        </div>
-
-        <div className="p-4">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui expedita
-          perferendis unde debitis sunt reprehenderit vero asperiores tempore,
-          officia excepturi fugit aliquam minus voluptas. At aut, voluptatum
-          magnam, praesentium voluptatibus in explicabo vero illum nesciunt
-          nostrum molestias saepe? Commodi, nihil. Magni ipsam, eaque impedit
-          fuga nobis enim rem sapiente accusantium?
+        <div className="mb-8">
+          <div className="mb-2 flex items-center">
+            <hr className="border-t-2 border-white flex-grow" />
+            <h2 className="text-3xl font-semibold text-blue-600 mx-4">
+              Content Team
+            </h2>
+            <hr className="border-t-2 border-white flex-grow" />
+          </div>
+          <div className="flex flex-col md:flex-row p-4">
+            <div className="w-full md:w-1/2 mb-4 md:mb-0">
+              <img
+                src="https://e1.pxfuel.com/desktop-wallpaper/923/120/desktop-wallpaper-momoland-kpop-south-korean-group-nancy-momoland.jpg"
+                alt="Content Team"
+                className="w-full h-auto rounded-lg object-cover"
+              />
+            </div>
+            <div className="w-full md:w-1/2 md:pl-8">
+              <div className="">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
+                expedita perferendis unde debitis sunt reprehenderit vero
+                asperiores tempore, officia excepturi fugit aliquam minus
+                voluptas. At aut, voluptatum magnam, praesentium voluptatibus in
+                explicabo vero illum nesciunt nostrum molestias saepe? Commodi,
+                nihil. Magni ipsam, eaque impedit fuga nobis enim rem sapiente
+                accusantium?
+              </div>
+            </div>
+          </div>
         </div>
         <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4">
           {teamMembers.map((member, index) => (
