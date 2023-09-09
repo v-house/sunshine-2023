@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import UpdatesPage from "./UpdatesPage";
@@ -31,7 +33,8 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
     const handleScroll = () => {
       scrollreceived();
       if (scrollheight != null) {
-        setIsNavbarVisible(window.scrollY > scrollheight - 100);
+        // setIsNavbarVisible(window.scrollY > scrollheight - 100);
+        // setIsNavbarVisible(true);
       }
     };
 
