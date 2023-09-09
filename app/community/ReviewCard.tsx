@@ -11,11 +11,11 @@ export interface Review {
 const ReviewCard: React.FC<Review> = ({ text, author, role, imageSrc }) => {
   return (
     <figure
-      className="bg-slate-100 rounded-xl m-2 mx-1 p-4 dark:bg-slate-800"
+      className="bg-slate-100 rounded-xl m-2 mx-1 p-4 dark:bg-slate-800 transition duration-500 hover:scale-x-105"
       style={{ breakInside: "avoid" }}
     >
       <img
-        className="h-36 w-36 object-cover rounded-full mx-auto"
+        className="h-36 w-36 object-cover rounded-full mx-auto transition duration-500 hover:scale-110"
         src={imageSrc}
         alt={author}
       />

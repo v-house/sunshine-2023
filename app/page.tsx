@@ -6,12 +6,13 @@ import { useEffect, useState } from "react";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import useWindowSize from "@rooks/use-window-size";
 import TeamAd from "@/components/TeamAd";
+import ExperienceBar from "@/components/ExperienceBar";
 
 export default function Home() {
   const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
 
   const backgroundImageUrl =
-    "https://www.lse.ac.uk/cpec/assets/images/747x420/mental-health-theme.jpg";
+    "https://www.lse.ac.uk/cpec/assets/images/747x420/menal-health-theme.jpg";
 
   const scrollDown = () => {};
   return (
@@ -55,9 +56,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div>
-              <TeamAd />
-            </div>
+            <div>{/* <TeamAd /> */}</div>
             <div className="h-screen">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a
               eius facilis perspiciatis, incidunt aliquam atque fugiat odio
@@ -72,6 +71,7 @@ export default function Home() {
             <Navbar />
           </div>
         </div>
+        <ExperienceBar />
       </div>
     </>
   );
