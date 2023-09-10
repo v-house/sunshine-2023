@@ -10,7 +10,7 @@ const BuddyProgram = () => {
         Sunshine is happy to present you the Buddy Program. In this program, we
         invite volunteers from the student body to be a Buddy to support their
         batch/peers of their Department. There can be multiple buddies from a
-        single batch's department.
+        single batchs department.
       </p>
       <h2 className="text-2xl font-semibold mb-4">Duties (not exhaustive):</h2>
       <ul className="list-disc ml-6">
