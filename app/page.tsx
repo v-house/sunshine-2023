@@ -89,6 +89,11 @@ export default function Home() {
                 Know your mentor
               </a>
             </Link>
+            <Link href="/community" legacyBehavior>
+              <a className="bg-slate-500 hover:bg-slate-600 text-white font-semibold py-2 px-4 mx-2 rounded-full">
+                What we hear
+              </a>
+            </Link>
           </div>
         </div>
       </div>
