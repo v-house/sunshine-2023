@@ -141,7 +141,7 @@ export default function IndexPage() {
         ))}
         <div className="p-4 text-center">
           <p>
-            Feel free to reach out to us if any query is still isn't resolved.
+            Feel free to reach out to us if any query is still isnt resolved.
           </p>
         </div>
       </div>
